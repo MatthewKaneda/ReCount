@@ -2,9 +2,7 @@ import React from 'react';
 import {
   View,
   StyleSheet,
-  Text,
   ScrollView,
-  Alert,
   TouchableOpacity,
   SafeAreaView,
   Dimensions,
@@ -13,7 +11,6 @@ import {
 import {
   Table,
   Row,
-  Rows,
   TableWrapper,
   Cell,
 } from 'react-native-table-component';
