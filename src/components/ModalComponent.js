@@ -11,8 +11,7 @@ import {
   Text,
 } from 'react-native';
 
-const ModalComponent = (props) => {
-
+const ModalComponent = props => {
   const [input, onChangeInput] = useState(0);
 
   // player selected = props.playerSelected
@@ -69,6 +68,7 @@ const ModalComponent = (props) => {
               // onChangeText={props.onChangeScore}
               onChangeText={onChangeInput}
               placeholder={modalStyles[props.modalType].placeholderText}
+              placeholderTextColor="#000"
               keyboardType={modalStyles[props.modalType].keyboardType}
               // value={props.tempScore}
               value={input}

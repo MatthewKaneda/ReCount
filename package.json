@@ -8,12 +8,16 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
-    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"
+    "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'",
+    "np": "np --no-publish",
+    "postversion": "react-native-version"
   },
   "dependencies": {
+    "np": "^7.6.3",
     "react": "18.1.0",
     "react-native": "0.70.2",
-    "react-native-table-component": "^1.2.2"
+    "react-native-table-component": "^1.2.2",
+    "react-native-version": "^4.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
@@ -27,5 +31,9 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewKaneda/ReCount.git"
   }
 }
