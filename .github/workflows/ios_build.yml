@@ -54,7 +54,7 @@ jobs:
         run: pod install --verbose --repo-update && cd ..
 
       - name: Build IOS App
-        uses: yukiarrr/ios-build-action@v1.4.0
+        uses: yukiarrr/ios-build-action@v1.5.0
         with:
           project-path: ios/ReCount.xcodeproj
           p12-base64: ${{ secrets.IOS_P12_BASE64 }}
